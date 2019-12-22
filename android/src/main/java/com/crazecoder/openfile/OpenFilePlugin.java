@@ -149,8 +149,8 @@ public class OpenFilePlugin implements MethodCallHandler
         switch (fileTypeStr) {
             case "3gp":
                 return "video/3gpp";
-            case "amr":
-                return "application/com.android.soundrecorder";
+            // case "amr":
+            //     return "application/com.android.soundrecorder";
             case "apk":
                 return TYPE_STRING_APK;
             case "asf":
