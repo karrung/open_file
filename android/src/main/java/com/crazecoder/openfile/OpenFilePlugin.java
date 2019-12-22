@@ -134,7 +134,9 @@ public class OpenFilePlugin implements MethodCallHandler
             intent.setDataAndType(Uri.fromFile(file), typeString);
         }
         try {
-            activity.startActivity(intent);
+            Uri webpage = Uri.parse("http://www.android.com");
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+            activity.startActivity(webIntent);
         } catch (Exception e) {
             result("No APP found to open this file。");
             return;
