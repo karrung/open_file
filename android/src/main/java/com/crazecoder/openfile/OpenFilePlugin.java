@@ -123,8 +123,8 @@ public class OpenFilePlugin implements MethodCallHandler
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        intent.addCategory("android.intent.category.HOME");
-        intent.addCategory("android.intent.category.DEFAULT");
+        // intent.addCategory("android.intent.category.HOME");
+        // intent.addCategory("android.intent.category.DEFAULT");
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             String packageName = context.getPackageName();
